@@ -1,6 +1,6 @@
 /* General styling */
 html, body {
-  height: 100%; /* Ensure the page takes up full height */
+  height: 100%;
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
@@ -10,26 +10,25 @@ html, body {
 .app-container {
   display: flex;
   flex-direction: column;
-  min-height: 100vh; /* Make sure the container fills the viewport */
+  min-height: 100vh;
 }
 
 /* Ensure the about content fills the remaining space */
 .app-main {
-  flex: 1; /* This allows the main content to grow and take up space */
+  flex: 1;
 }
 
 .about-wrapper {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  min-height: 80vh; /* Ensure the about section takes a large enough space */
+  min-height: 80vh;
 }
 
 .about-content {
   flex-grow: 1;
   padding: 20px;
 }
-
 
 /* Green header */
 .jumbotron {
@@ -76,13 +75,22 @@ html, body {
   margin-bottom: 20px;
 }
 
-/* Footer styling */
+/* Updated Footer styling */
 .app-footer {
   background-color: #343a40;
   color: white;
-  text-align: center;
   padding: 20px 0;
-  margin-top: auto; /* Pushes the footer to the bottom of the page */
+  margin-top: auto;
+}
+
+.app-footer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.app-footer p {
+  margin: 0;
 }
 
 .github-logo {
@@ -98,7 +106,6 @@ html, body {
 .app-footer a:hover {
   opacity: 0.7;
 }
-
 
 .tech-pill {
   background-color: #28a745;
