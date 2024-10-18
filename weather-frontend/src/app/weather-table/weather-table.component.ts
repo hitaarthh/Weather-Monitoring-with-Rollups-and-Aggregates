@@ -53,7 +53,7 @@ export class WeatherTableComponent implements OnInit {
     if (this.isCelsius) {
       return temp; // Temperature is already in Celsius
     } else {
-      return (temp * 9/5) + 32; // Convert Celsius to Fahrenheit
+      return temp + 273.15; // Convert Celsius to Kelvin
     }
   }
 
