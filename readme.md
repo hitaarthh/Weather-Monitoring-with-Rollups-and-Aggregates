@@ -5,6 +5,7 @@
 The **Weather Monitoring System** is a robust, real-time weather dashboard that monitors weather conditions across major metros in India. It continuously fetches data from the OpenWeatherMap API, aggregates it, and provides insights on average, maximum, and minimum temperatures, humidity, and wind speed. The system also allows users to set alert thresholds for specific weather conditions and displays notifications when those thresholds are breached.
 
 <img width="1440" alt="Screenshot 2024-10-17 at 6 28 31 PM" src="https://github.com/user-attachments/assets/7ac41926-5469-4c1d-b8c1-cc5c2cb0f103">
+<img width="1173" alt="Screenshot 2024-10-18 at 2 30 39 PM" src="https://github.com/user-attachments/assets/b663a16b-2a65-4928-88eb-1c84c856df00">
 
 ## Features 🚀
 
