@@ -1,0 +1,33 @@
+<app-weather-summary-filter (filterApplied)="onFilterApplied($event)"></app-weather-summary-filter>
+
+<div class="table-container">
+  <table class="weather-table">
+    <thead>
+      <tr>
+        <th>CITY</th>
+        <th>DATE</th>
+        <th>AVG TEMP ({{ isCelsius ? '°C' : 'K' }})</th>
+        <th>MAX TEMP ({{ isCelsius ? '°C' : 'K' }})</th>
+        <th>MIN TEMP ({{ isCelsius ? '°C' : 'K' }})</th>
+        <th>CONDITION</th>
+        <th>AVG HUMIDITY (%)</th>
+        <th>MAX WIND SPEED (M/S)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of weatherData">
+        <td>{{ data.city }}</td>
+        <td>{{ data.date | date:'yyyy-MM-dd' }}</td>
+        <td>{{ convertTemp(data.avgTemp) | number:'1.2-2' }}</td>
+        <td>{{ convertTemp(data.maxTemp) | number:'1.2-2' }}</td>
+        <td>{{ convertTemp(data.minTemp) | number:'1.2-2' }}</td>
+        <td>
+          <i [class]="getWeatherIcon(data.dominantCondition)"></i>
+          {{ data.dominantCondition }}
+        </td>
+        <td>{{ data.avgHumidity | number:'1.2-2' }}</td>
+        <td>{{ data.maxWindSpeed | number:'1.2-2' }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

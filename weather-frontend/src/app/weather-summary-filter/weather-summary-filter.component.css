@@ -1,0 +1,56 @@
+.filter-container {
+    overflow-x: auto;
+    margin-bottom: 20px;
+  }
+  
+  .filter-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    color: #212529;
+  }
+  
+  .date-inputs {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .filter-container input[type="date"] {
+    padding: 8px 12px;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    color: #495057;
+  }
+  
+  .filter-container button {
+    padding: 8px 15px;
+    background-color: #f8f9fa;
+    color: #495057;
+    border: 1px solid #dee2e6;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .filter-container button:hover {
+    background-color: #e9ecef;
+  }
+  
+  @media (max-width: 768px) {
+    .filter-content {
+      flex-direction: column;
+      align-items: stretch;
+    }
+  
+    .date-inputs {
+      margin-bottom: 10px;
+    }
+  
+    .filter-container button {
+      width: 100%;
+    }
+  }
